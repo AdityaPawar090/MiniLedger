@@ -1,0 +1,23 @@
+{
+  "name": "miniledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MiniLedger - A full-stack mobile application for tracking money lent to friends",
+  "scripts": {
+    "db:start": "npm --prefix apps/api run db:start",
+    "db:migrate": "npm --prefix apps/api run db:migrate",
+    "db:generate": "npm --prefix apps/api run db:generate",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:mobile": "npm --prefix apps/mobile run start",
+    "build:api": "npm --prefix apps/api run build",
+    "test:api": "npm --prefix apps/api test",
+    "test": "npm --prefix apps/api test",
+    "typecheck:api": "npm --prefix apps/api run build",
+    "typecheck:mobile": "npm --prefix apps/mobile run typecheck"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "author": "",
+  "license": "ISC"
+}
